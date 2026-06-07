@@ -6,9 +6,9 @@ import DetalhesProjetos from './DetalhesProjeto';
 export default function Projetos(){
   
     return(
-        <div>
+        <div className='container'> 
             <section style={{ padding: '20px' }}>
-                <h2>Meus Projetos</h2>
+                <h2 className='meus-proj'>Meus Projetos</h2>
       
           <div className="container-cards" >
             {DadosCurtos.map((projeto) => (
@@ -40,8 +40,8 @@ export default function Projetos(){
               </div>
             ))}
             </div>
-                   <Link to ='/DetalhesProjetos'> Ver Detalhes</Link>
-                   < Link to="/" >  Voltar para o Inicio</Link>
+                   <Link className='link' to ='/DetalhesProjetos'> Ver Detalhes</Link>
+                   < Link className='link' to="/" >  Voltar para o Inicio</Link>
                   </section>
                    <br />
            </div>
